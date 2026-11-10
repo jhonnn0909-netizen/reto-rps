@@ -1,0 +1,17 @@
+{
+  "name": "El Reto",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "El Reto",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postStartCommand": "nohup npx --yes serve -l 8080 . > /tmp/serve.log 2>&1 &",
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
