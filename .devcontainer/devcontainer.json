@@ -8,7 +8,7 @@
       "onAutoForward": "openPreview"
     }
   },
-  "postStartCommand": "nohup npx --yes serve -l 8080 . > /tmp/serve.log 2>&1 &",
+  "postStartCommand": "nohup python3 -m http.server 8080 > /tmp/serve.log 2>&1 &",
   "customizations": {
     "vscode": {
       "extensions": []
